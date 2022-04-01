@@ -1,0 +1,89 @@
+@use 'sass:math';
+
+@mixin font($name: auto, $weight: auto, $style: auto, $size: auto) {
+  font: {
+    family: $name, sans-serif;
+    weight: $weight;
+    style: $style;
+    size: $size;
+  }
+}
+
+@mixin scrollbar($width, $scrollbar-color, $background-color) {
+  &::-webkit-scrollbar {
+    width: $width;
+    background-color: $scrollbar-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $background-color;
+  }
+}
+
+@mixin local-fade($duration, $class-name) {
+  .#{$class-name} {
+    &-enter,
+    &-leave-to {
+      opacity: 0;
+    }
+
+    &-enter-active,
+    &-leave-active {
+      transition: opacity $duration;
+    }
+  }
+}
+
+@mixin slide-vertical($duration, $class-name, $timing-function) {
+  .#{$class-name}-enter-active {
+    animation: slide-up $duration $timing-function;
+  }
+
+  .#{$class-name}-leave-active {
+    animation: slide-down $duration $timing-function;
+  }
+}
+
+@mixin capture-height($height) {
+  height: $height;
+  max-height: $height;
+  min-height: $height;
+}
+
+@mixin capture-width($width) {
+  width: $width;
+  max-width: $width;
+  min-width: $width;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@function vw($size) {
+  @return math.div($size, (1920 * 0.01 * 1px)) * 1vw;
+}
+
+@function vh($size) {
+  @return math.div($size, (1080 * 0.01 * 1px)) * 1vh;
+}
+
+@function em($size) {
+  @return math.div($size, 16px) * 1em;
+}

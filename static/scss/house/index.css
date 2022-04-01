@@ -1,0 +1,380 @@
+#root {
+  padding-top: 40px;
+}
+#root header .global-wrapper {
+  flex-direction: column;
+}
+#root header .global-wrapper .house-card {
+  padding-top: 20px;
+}
+#root header .global-wrapper .house-card img {
+  width: 100%;
+}
+#root header .global-wrapper .house-card p.description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  padding-top: 15px;
+  color: rgba(51, 51, 51, 0.3);
+}
+#root header .global-wrapper .house-card .settings-content {
+  padding-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+#root header .global-wrapper .house-card .settings-content .characteristics {
+  max-width: 54.933vw;
+}
+#root header .global-wrapper .house-card .settings-content .characteristics .block-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 31px;
+}
+#root header .global-wrapper .house-card .settings-content .characteristics .block-inner .list p {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 10px;
+}
+#root header .global-wrapper .house-card .settings-content .characteristics .block-inner .list b {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+}
+#root header .global-wrapper .house-card .settings-content .characteristics .block-inner .list b svg {
+  padding-right: 4.7px;
+}
+#root header .global-wrapper .house-card .settings-content .features ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#root header .global-wrapper .house-card .settings-content .features ul li {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+}
+#root header .global-wrapper .house-card .settings-content .features ul li svg {
+  padding-right: 7px;
+}
+#root header .global-wrapper .house-card .settings-content .block {
+  display: flex;
+  flex-direction: column;
+}
+#root header .global-wrapper .house-card .settings-content .block .list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  padding-bottom: 10px;
+}
+#root header .global-wrapper .house-card .price-of-completion {
+  padding-top: 20px;
+}
+#root header .global-wrapper .house-card .price-of-completion .buttons {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+#root header .global-wrapper .house-card .price-of-completion .buttons button {
+  width: 100%;
+}
+#root header .global-wrapper .house-card .price-of-completion .buttons button:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+#root header .global-wrapper .house-card .price-of-completion .buttons button:last-child {
+  border-radius: 0px 5px 5px 0px;
+}
+#root header .global-wrapper .house-card .price-of-completion .complect ul {
+  display: flex;
+  flex-direction: column;
+}
+#root header .global-wrapper .house-card .price-of-completion .complect ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#root header .global-wrapper .house-card .price-of-completion .complect ul li img {
+  width: auto;
+  min-width: 31px;
+  object-fit: scale-down;
+}
+#root header .global-wrapper .house-card .price-of-completion .complect ul li p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #333333;
+}
+#root header .global-wrapper .house-card .price-of-completion .complect ul li .line {
+  width: 93px;
+  height: 1px;
+  background-color: rgba(51, 51, 51, 0.09);
+}
+#root header .global-wrapper .house-card .price-of-completion .complect ul li b {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: right;
+  color: #333333;
+}
+#root header .global-wrapper .house-card .price-of-completion .order-project {
+  width: 100%;
+  margin-top: 20px;
+}
+#root main .complect {
+  background-color: #F8F8F8;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#root main .complect .global-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#root main .complect .buttons {
+  display: flex;
+  align-items: center;
+}
+#root main .complect .buttons button {
+  width: 100%;
+}
+#root main .complect .buttons button:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+#root main .complect .buttons button:nth-child(2) {
+  border-radius: 0;
+}
+#root main .complect .buttons button:last-child {
+  border-radius: 0px 5px 5px 0px;
+}
+#root main .complect .content .foundation {
+  padding-top: 14px;
+}
+#root main .complect .content .foundation .top-card {
+  margin-top: 14px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+#root main .complect .content .foundation .top-card button {
+  margin-top: 10px;
+  width: 100%;
+}
+#root main .complect .content .foundation .subtitle {
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #333333;
+}
+#root main .complect .content .foundation .cards {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#root main .complect .content .foundation .cards .card {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px dashed rgba(51, 51, 51, 0.25);
+  padding-bottom: 10px;
+}
+#root main .complect .content .foundation .cards .card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#root main .complect .content .foundation .cards .card .top .for {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+#root main .complect .content .foundation .cards .card .top .for b {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+#root main .complect .content .foundation .cards .card .top .for p {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(51, 51, 51, 0.35);
+}
+#root main .complect .content .foundation .cards .card .top .for p svg {
+  padding-right: 7px;
+}
+#root main .complect .content .foundation .cards .card p.content {
+  padding-top: 16px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#root main .complect .content .foundation .cards .card:last-child {
+  border: none;
+}
+#root main .complect .content .foundation .select-brus {
+  margin-top: 20px;
+  padding: 15px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+#root main .complect .content .foundation .select-brus .buttons {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+#root main .complect .content .foundation .select-brus .images {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  justify-content: center;
+}
+#root main .complect .content .foundation .select-brus .images .image p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.8);
+}
+#root main .complect .content .services {
+  padding-top: 10px;
+}
+#root main .complect .content .services .services-content {
+  padding: 15px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#root main .complect .content .services .services-content .card {
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(51, 51, 51, 0.25);
+}
+#root main .complect .content .services .services-content .card b {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+#root main .complect .content .services .services-content .card p.text {
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#root main .complect .content .services .services-content .card p.price {
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+}
+#root main .complect .content .services .services-content .card:last-child {
+  border: none;
+}
+#root main .designer {
+  padding-top: 40px;
+}
+#root main .designer .info-wrapper {
+  background-color: #F8F8F8;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+#root main .designer .info-wrapper .info {
+  padding-top: 6.5px;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+}
+#root main .designer .info-wrapper .info p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+#root main .designer .info-wrapper .info p svg {
+  padding-left: 9px;
+}
+#root main .designer .info-wrapper .info button {
+  width: 25px;
+  height: 25px;
+  background-color: #2CC37C;
+  border-radius: 3.6325px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+#root main .designer .global-wrapper {
+  flex-direction: column;
+}
+#root main .designer img {
+  width: 100%;
+  padding-top: 20px;
+}
+#root main .free-taxing {
+  overflow: hidden;
+}
+#root main .free-taxing .global-wrapper {
+  display: block;
+}
+#root main .free-taxing .global-wrapper button {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#root main .free-taxing .global-wrapper button svg {
+  padding-right: 6px;
+}
+#root main .free-taxing .global-wrapper .taxing-calculator {
+  padding-top: 15px;
+}
+#root main .free-taxing .global-wrapper .taxing-calculator .description {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#root main .free-taxing .global-wrapper .taxing-calculator .description p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+#root main .free-taxing .global-wrapper .taxing-calculator .description p span {
+  color: rgba(51, 51, 51, 0.5);
+}
+#root main .free-taxing .global-wrapper .taxing-calculator .price {
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+#root main .free-taxing .global-wrapper .taxing-calculator .price span {
+  color: #2CC37C;
+}
+
+/*# sourceMappingURL=index.css.map */

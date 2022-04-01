@@ -1,0 +1,76 @@
+main{
+  .reviews{
+    .global-wrapper{
+      flex-direction: column;
+      .review-cards{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 25px;
+        .review-card{
+          display: flex;
+          flex-direction: column;
+          .inner{
+            padding: 15px 56px 15px 15px;
+            display: flex;
+            flex-direction: column;
+            background-color: #F8F8F8;
+            border-radius: 10px;
+            .top-info{
+              gap: 15px;
+              display: flex;
+              align-items: center;
+              img{
+                max-width: 50px;
+                border-radius: 100%;
+                object-fit: cover;
+              }
+              .name__date{
+                b{
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 22px;
+                  color: #333333;
+                }
+                p{
+                  padding-top: 6px;
+                  font-weight: 400;
+                  font-size: 10px;
+                  line-height: 12px;
+                  color: rgba(51, 51, 51, 0.7);
+                }
+              }
+            }
+            .building-info{
+              padding-top: 20px;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              p{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: #333333;
+                span{
+                  color: rgba(51, 51, 51, 0.5);
+                }
+              }
+            }
+            .comment{
+              padding-top: 20px;
+              p{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: #333333;
+              }
+            }
+          }
+          button{
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}

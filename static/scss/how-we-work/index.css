@@ -1,0 +1,65 @@
+#root {
+  padding-top: 40px;
+}
+#root header {
+  overflow: hidden;
+}
+#root header .global-wrapper {
+  flex-direction: column;
+}
+#root header .global-wrapper .swiper-container {
+  padding-top: 15px;
+}
+#root main .content-section .global-wrapper {
+  flex-direction: column;
+}
+#root main .content-section .global-wrapper .how-we-work-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-bottom: 1px dashed rgba(51, 51, 51, 0.25);
+}
+#root main .content-section .global-wrapper .how-we-work-card img {
+  max-width: 90px;
+  margin: auto;
+}
+#root main .content-section .global-wrapper .how-we-work-card .block-title {
+  padding-top: 20px;
+}
+#root main .content-section .global-wrapper .how-we-work-card .block-subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(51, 51, 51, 0.7);
+}
+#root main .content-section .global-wrapper .how-we-work-card .block {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#root main .content-section .global-wrapper .how-we-work-card .block b {
+  margin: auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+#root main .content-section .global-wrapper .how-we-work-card .block p {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+}
+#root main .content-section .global-wrapper .how-we-work-card .block p svg {
+  padding-right: 15px;
+}
+#root main .content-section .global-wrapper .how-we-work-card .we b {
+  color: #2CC37C;
+}
+#root main .content-section .global-wrapper .how-we-work-card .other b {
+  color: rgba(51, 51, 51, 0.3);
+}
+
+/*# sourceMappingURL=index.css.map */

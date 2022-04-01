@@ -1,0 +1,128 @@
+#root {
+  padding-top: 40px;
+}
+
+header .global-wrapper {
+  flex-direction: column;
+}
+header .global-wrapper .block {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #F8F8F8;
+  border-radius: 10px;
+}
+header .global-wrapper .block .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+header .global-wrapper .block .additional-services {
+  padding-top: 15px;
+}
+header .global-wrapper .block .additional-services .additional-services-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+}
+header .global-wrapper .block .additional-services #checkbox {
+  padding-top: 11px;
+}
+header .global-wrapper .block .price {
+  padding-top: 19px;
+}
+header .global-wrapper .block .price b {
+  font-weight: bold;
+}
+header .global-wrapper .block .price b span {
+  font-style: normal;
+}
+header .global-wrapper .block .consultation-reset {
+  padding-top: 19px;
+  display: flex;
+}
+
+main .cards {
+  padding-top: 20px;
+}
+main .cards .global-wrapper {
+  flex-direction: column;
+  gap: 20px;
+}
+main .cards .global-wrapper .card .card-inner b {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+main .cards .global-wrapper .card .card-inner p {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(51, 51, 51, 0.7);
+}
+main .cards .global-wrapper .card .card-inner .price {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 103px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.53) 0%, rgba(0, 0, 0, 0) 100%), url("https://i.imgur.com/a2VzMBG.png");
+  border-radius: 10px;
+}
+main .cards .global-wrapper .card .card-inner .price p {
+  padding: 6px 17px;
+  background-color: #2CC37C;
+  border-radius: 58px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+main .cards .global-wrapper .card .calculation {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 10px;
+  background-color: #F8F8F8;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+main .cards .global-wrapper .card .calculation .text {
+  max-width: 180px;
+}
+main .cards .global-wrapper .card .calculation .number {
+  display: flex;
+  align-items: center;
+}
+main .cards .global-wrapper .card .calculation .number .num {
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  border-radius: 5px;
+  width: 28px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4px 10px;
+}
+main .cards .global-wrapper .card .calculation .number p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 5px;
+  color: rgba(51, 51, 51, 0.8);
+}
+main .cards .global-wrapper .card .calculation .price {
+  min-width: 100px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+/*# sourceMappingURL=index.css.map */

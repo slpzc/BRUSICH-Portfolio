@@ -1,0 +1,95 @@
+@mixin preprocess($positions) {
+  @for $i from 1 through length($positions) {
+    .modal-point:nth-child(#{ $i }) {
+      top: nth(nth($positions, $i), 1);
+      left: nth(nth($positions, $i), 2);
+    }
+  } 
+}
+
+&.roof {
+  $positions: vw(184px) vw(136px), vw(311px) vw(172px), vw(347px) vw(304px), vw(353px) vw(424px), vw(438px) vw(493px); 
+  @include preprocess($positions);
+}
+
+&.front {
+  $positions: vw(254px) vw(322px), vw(178px) vw(488px), vw(200px) vw(600px);
+  @include preprocess($positions);
+}
+
+&.ceiling {
+  $positions: vw(434px) vw(396px), vw(383px) vw(455px), vw(252px) vw(396px), vw(331px) vw(345px), vw(367px) vw(578px);
+  @include preprocess($positions);
+}
+
+&.partitions {
+  $positions: vw(278px) vw(347px), vw(169px) vw(345px), vw(43px) vw(362px);
+  @include preprocess($positions);
+}
+
+&.interfloor-overlap {
+  $positions: vw(446px) vw(419px), vw(385px) vw(476px), vw(295px) vw(422px), vw(340px) vw(352px), vw(308px) vw(527px), vw(224px) vw(368px);
+  @include preprocess($positions);
+}
+
+&.interior-doors {
+  $positions: vw(374px) vw(420px), vw(186px) vw(572px), vw(186px) vw(280px);
+  @include preprocess($positions);
+}
+
+&.window {
+  $positions: vw(340px) vw(433px), vw(264px) vw(240px), vw(193px) vw(556px);
+  @include preprocess($positions);
+}
+
+&.floor {
+  $positions: vw(504px) vw(680px), vw(263px) vw(492px), vw(432px) vw(535px), vw(407px) vw(683px), vw(320px) vw(658px), vw(329px) vw(529px), vw(263px) vw(586px), vw(182px) vw(467px);
+  @include preprocess($positions);
+}
+
+&.external-walls {
+  $positions: vw(413px) vw(609px), vw(428px) vw(362px), vw(427px) vw(98px), vw(260px) vw(88px), vw(196px) vw(149px);
+  @include preprocess($positions);
+}
+
+&.entrance-door {
+  $positions: vw(252px) vw(419px), vw(240px) vw(230px), vw(143px) vw(494px);
+  @include preprocess($positions);
+}
+
+&.partitions-frame {
+  $positions: vw(295px) vw(472px), vw(61px) vw(145px), vw(151px) vw(208px), vw(239px) vw(397px), vw(257px) vw(263px), vw(183px) vw(323px);
+  @include preprocess($positions);
+}
+
+&.interior-doors-frame { 
+  $positions: vw(374px) vw(382px), vw(47px) vw(518px), vw(184px) vw(255px), vw(377px) vw(200px), vw(393px) vw(552px);
+  @include preprocess($positions);
+}
+
+&.window-frame {
+  $positions: vw(340px) vw(433px), vw(83px) vw(504px), vw(123px) vw(291px), vw(286px) vw(240px), vw(397px) vw(534px);
+  @include preprocess($positions);
+}
+
+&.external-walls-frame {
+  $positions:
+  // 1
+  vw(87px) vw(13px), vw(87px) vw(276px), vw(87px) vw(539px), vw(305px) vw(219px), vw(305px) vw(457px), vw(305px) vw(700px),
+  // 2
+  vw(267px) vw(155px), vw(267px) vw(394px), vw(267px) vw(657px),
+  // 3
+  vw(117px) vw(130px), vw(117px) vw(369px), vw(117px) vw(613px),
+  // 4
+  vw(238px) vw(79px), vw(238px) vw(327px), vw(238px) vw(587px),
+  // 5
+  vw(172px) vw(122px), vw(172px) vw(379px), vw(172px) vw(655px),
+  // 6
+  vw(188px) vw(488px);
+  @include preprocess($positions);                 
+}
+
+&.entrance-door-frame {
+  $positions: vw(256px) vw(428px), vw(41px) vw(519px), vw(155px) vw(109px), vw(289px) vw(203px), vw(331px) vw(545px);
+  @include preprocess($positions);
+}

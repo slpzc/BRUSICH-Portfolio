@@ -1,0 +1,183 @@
+@keyframes slide {
+  0%{
+    background-position: 0;
+  }
+  50%{
+    background-position: -5059px
+  }
+  100%{
+    background-position: 0
+  }
+}
+header{
+  min-height: 320px;
+  background-image: url('https://i.imgur.com/RPJomwF.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  animation: slide 235s ease-in-out ;
+  overflow: hidden;
+}
+
+
+main{
+  section{overflow: hidden;}
+  .first__carousel{
+    position: relative;
+    bottom: 90px;
+    .global-wrapper{
+      display: block;
+    }
+  }
+  .popular__project{
+    .global-wrapper{
+      flex-direction: column;
+      .filter{
+        position: relative;
+        z-index: 2;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        align-items: flex-end;
+        button{
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  .calculator__section{
+    padding-top: 20px;
+    .global-wrapper{
+      flex-direction: column;
+      .calculator{
+        background-color: #C0E6E4;
+        border-radius: 10px;
+        padding: 18px 18px 19px 20px;
+        display: flex;
+        justify-content: space-between;
+        .text__content{
+          max-width: 279px;
+          b{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #4F8784;
+          }
+          p{
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: rgba(79, 135, 132, 0.7);
+          }
+        }
+      }
+      button{
+        background-color: #F8F8F8;
+        border-radius: 10px;
+        margin-top: 10px;
+        border: none;
+        outline: none;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        color: #333333;
+        min-height: 46px;
+      }
+    }
+  }
+  .technology__of__building{
+    margin-top: 39px;
+    .global-wrapper{
+      flex-direction: column;
+    }
+  }
+  .steps__of__job{
+    padding-top: 40px;
+    .global-wrapper{
+      flex-direction: column;
+      gap: 20px;
+      .step__card{
+        display: flex;
+        align-items: flex-start;
+        background-color: #F8F8F8;
+        border-radius: 6.08466px;
+        gap: 2.933333333333333vw;
+        padding: 15px 10px 29px 15px;
+        .index{
+          font-weight: 600;
+          font-size: 21.9048px;
+          line-height: 26px;
+          color: #CACACA;
+        }
+        .text__content{
+          max-width: 49.6vw;
+        b{
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          color: #333333;
+        }
+        p{
+          padding-top: 6px;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: rgba(0, 0, 0, 0.51);
+        }
+        }
+        .image{
+        position: relative;
+          img{
+            position: relative;
+            z-index: 2;
+          }
+          &::before{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            content: "";
+            width: 60px;
+            height: 60px;
+            background-color: #CACACA;
+            z-index: 1;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+  }
+  .quality__section{
+    padding-top: 40px;
+    .global-wrapper{
+      flex-direction: column;
+      .sliders{
+
+      }
+    }
+  }
+  .regions__section{
+    padding-top: 40px;
+    background-image: url('https://i.imgur.com/tuqRD6W.png');
+    background-size: 375px 620px;
+    .global-wrapper{
+      flex-direction: column;
+
+    }
+  }
+  .reviews__section{
+    padding-top: 38px;
+    .global-wrapper{
+      flex-direction: column;
+      button{
+        margin-top: 20px;
+      }
+    }
+  }
+  .yandex__map{
+    margin-top: 40px;
+    height: 277px;
+  }
+}

@@ -1,0 +1,72 @@
+main .reviews .global-wrapper {
+  flex-direction: column;
+}
+main .reviews .global-wrapper .review-cards {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 25px;
+}
+main .reviews .global-wrapper .review-cards .review-card {
+  display: flex;
+  flex-direction: column;
+}
+main .reviews .global-wrapper .review-cards .review-card .inner {
+  padding: 15px 56px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F8F8;
+  border-radius: 10px;
+}
+main .reviews .global-wrapper .review-cards .review-card .inner .top-info {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+}
+main .reviews .global-wrapper .review-cards .review-card .inner .top-info img {
+  max-width: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+main .reviews .global-wrapper .review-cards .review-card .inner .top-info .name__date b {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+main .reviews .global-wrapper .review-cards .review-card .inner .top-info .name__date p {
+  padding-top: 6px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(51, 51, 51, 0.7);
+}
+main .reviews .global-wrapper .review-cards .review-card .inner .building-info {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .reviews .global-wrapper .review-cards .review-card .inner .building-info p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+}
+main .reviews .global-wrapper .review-cards .review-card .inner .building-info p span {
+  color: rgba(51, 51, 51, 0.5);
+}
+main .reviews .global-wrapper .review-cards .review-card .inner .comment {
+  padding-top: 20px;
+}
+main .reviews .global-wrapper .review-cards .review-card .inner .comment p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+}
+main .reviews .global-wrapper .review-cards .review-card button {
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=index.css.map */

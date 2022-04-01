@@ -1,0 +1,11 @@
+#navigation {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+}
+#navigation .global-wrapper {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=index.css.map */

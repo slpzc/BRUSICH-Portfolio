@@ -1,0 +1,408 @@
+@media screen and (max-device-width: 429px) {
+  .home-page {
+    .swiper-container::v-deep {
+      .swiper {
+        height: 150px;
+
+        .slide-picture {
+          background-position: center;
+        }
+      }
+
+      .houses-buttons {
+        margin-top: -50px;
+
+        .house {
+          display: none;
+        }
+
+        .mobile-swiper {
+          display: flex;
+          margin-left: 15px;
+
+          &__item {
+            display: flex;
+            flex-direction: column;
+            width: 126px;
+            height: 153px;
+
+            .mobile-house {
+              display: flex;
+              align-items: center;
+
+              &__picture {
+                width: 126px;
+                height: 126px;
+                border-radius: 7px;
+                background: {
+                  size: cover;
+                  position: center;
+                  repeat: no-repeat;
+                }
+              }
+
+              &__text {
+                @include font(Lato, normal, normal, 14px);
+                margin-top: 10px;
+                color: #333333;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .popular-projects {
+      flex-direction: column;
+      background-color: transparent;
+      margin-top: 40px;
+      padding-left: 14px;
+      height: unset;
+
+      .text-container {
+        width: 100%;
+
+        &__title {
+          font-size: 24px;
+        }
+
+        &__text {
+          font-size: 13px;
+          width: 257px;
+          color: rgba(#333333, 0.4);
+        }
+      }
+
+      .house-types,
+      .more {
+        display: none;
+      }
+
+      .houses-slider {
+        width: 100%;
+        height: 290px;
+        margin-top: 20px;
+
+        &::v-deep .arrow {
+          display: none;
+        }
+
+        &::v-deep .slide {
+          min-width: 198px;
+          max-width: 198px;
+          height: 290px;
+
+          .slide__picture {
+            min-height: 127.85px;
+
+            .mark {
+              font-size: 8.2px;
+              padding: 1px 8px;
+            }
+
+            .slider-button svg {
+              width: 19.75px;
+              height: 19.7px;
+            }
+          }
+
+          .content {
+            padding: 11.5px 0 19px 10px;
+
+            &__title {
+              font-size: 12px;
+              width: 144.71px;
+              height: 32.99px;
+              line-height: unset;
+            }
+
+            .characteristic {
+              margin-top: 11.9px;
+
+              .list-item {
+                line-height: unset;
+                font-size: 8.2px;
+                margin-top: 4.5px;
+
+                &__title {
+                  line-height: unset;
+                }
+
+                &__value {
+                  margin-left: 2.3px;
+                  line-height: unset;
+                }
+              }
+            }
+
+            .price {
+              &__title {
+                font-size: 9.1px;
+              }
+
+              &__value {
+                font-size: 11.03px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .content-container {
+      padding-top: 20px;
+
+      .content {
+        width: 100%;
+        padding: 0 15px;
+
+        .calc::v-deep .price-container {
+          padding-left: unset;
+          min-height: unset;
+          padding-right: unset;
+          padding: 18px;
+          width: 100%;
+          border-radius: 10px;
+          align-items: flex-start;
+
+          .text-container {
+            &__title {
+              font-size: 24px;
+              width: 243px;
+            }
+
+            &__text {
+              font-size: 13px;
+              width: 279px;
+              margin-top: 12px;
+            }
+          }
+
+          .route__title {
+            display: none;
+          }
+
+          .route:last-child {
+            display: none;
+          }
+
+          .route__button {
+            width: 30px;
+            height: 30px;
+
+            svg {
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+
+        .calc::v-deep .calculator {
+          @include font(Lato, normal, normal, 13px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #333333;
+          background-color: #f8f8f8;
+          border-radius: 10px;
+          margin-top: 10px;
+          height: 46px;
+        }
+
+        .building-technologies {
+          margin-top: 39px;
+
+          &__title {
+            font-size: 24px;
+          }
+
+          &__text {
+            font-size: 13px;
+            width: 345px;
+            margin-top: 10px;
+          }
+        }
+
+        .technologies-mobile {
+          margin-top: 30px;
+          width: 100%;
+
+          .swiper-slide {
+            width: 222px;
+            height: 116px;
+
+            .technology-container {
+              pointer-events: none;
+            }
+
+            &:first-child .technology-container {
+              background: {
+                color: #e6dbc0;
+                image: url('~assets/img/Home/technologies/materials.png');
+                size: contain;
+                position: center;
+                repeat: no-repeat;
+              }
+            }
+
+            &:nth-child(2) .technology-container {
+              background: {
+                color: rgba(149, 218, 218, 0.56);
+                image: url('~assets/img/Home/technologies/working-map.png');
+                size: contain;
+                position: center;
+                repeat: no-repeat;
+              }
+            }
+
+            &:nth-child(3) .technology-container {
+              background: {
+                color: #b6ffd2;
+                image: url('~assets/img/Home/technologies/build-stages.png');
+                size: contain;
+                position: center;
+                repeat: no-repeat;
+              }
+            }
+
+            &:nth-child(4) .technology-container {
+              background: {
+                color: #c7e1f9;
+                image: url('~assets/img/Home/technologies/technologies.png');
+                size: contain;
+                position: center;
+                repeat: no-repeat;
+              }
+            }
+
+            &:nth-child(5) .technology-container {
+              background: {
+                color: #edede1;
+                image: url('~assets/img/Home/technologies/FAQ.png');
+                size: contain;
+                position: center;
+                repeat: no-repeat;
+              }
+            }
+          }
+
+          .technology-container {
+            width: inherit;
+            height: inherit;
+            margin-right: 0;
+
+            &::v-deep .technology-content {
+              &__title {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+
+        .work-stages {
+          margin-top: 40px;
+
+          &::v-deep .free-item {
+            display: none;
+          }
+
+          &::v-deep .work-stages__title {
+            font-size: 24px;
+          }
+
+          &::v-deep .stages-block {
+            margin-top: 20px;
+
+            .stages-list {
+              width: 100%;
+              height: auto;
+              pointer-events: none;
+
+              .stage-line {
+                flex-direction: column;
+                margin-top: 0;
+                margin-top: 20px;
+
+                &:first-child {
+                  margin-top: 0;
+                }
+
+                .stage-item {
+                  width: 100%;
+                  height: 140px;
+
+                  .stage-text-content {
+                    padding: 15px;
+
+                    &__text {
+                      &-index {
+                        font-size: 22px;
+                      }
+                    }
+
+                    .labels {
+                      margin-left: 12px;
+
+                      &__title {
+                        font-size: 20px;
+                        width: 181.93px;
+                      }
+
+                      &__text {
+                        font-size: 12px;
+                        width: 160.03px;
+                      }
+                    }
+                  }
+
+                  &__picture {
+                    width: 91.27px;
+                    height: 91.27px;
+
+                    .ellipse {
+                      width: 60.85px;
+                      height: 61.4px;
+                    }
+                  }
+
+                  &:last-child {
+                    margin-top: 20px;
+                  }
+                }
+              }
+            }
+
+            .stages-container {
+              position: relative;
+            }
+
+            .lines {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .home-page .quality-elements .quality-container{
+    width: 65.86666666666666vw;
+  }
+}
+
+//.quality-elements{
+//  width: 100% !important;
+//  overflow-x: scroll !important;
+//  .quality-container{
+//    width: 100% !important;
+//    .top-block{
+//      min-height: 100% !important;
+//    }
+//  }
+//}
+
+/*
+ * I hope you never touch code again.
+ */

@@ -1,0 +1,35 @@
+// FONT
+//@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('../../assets/css/fonts.scss');
+body{
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+// GLOBAL STYLES
+.global-wrapper{
+  max-width: 92vw;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  .block-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333333;
+  }
+  .block-subtitle{
+    padding-top: 10px;
+    font-size: 13px;
+    line-height: 138.5%;
+    color: #6F6F6F;
+  }
+  .content-title{
+    padding-bottom: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+  }
+}

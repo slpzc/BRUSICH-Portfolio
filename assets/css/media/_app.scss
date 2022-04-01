@@ -1,0 +1,39 @@
+@media screen and (max-device-width: 429px) {
+  .app {
+    padding-top: 85px;
+  }
+
+  .headers__title, .headers__text {
+    display: none;
+  }
+
+  .marquiz__fix {
+    height: 100px !important;
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .widthfix {
+    width: 100% !important;
+    margin-left: 0px !important;
+    border-radius: 10px !important;
+    margin-top: 14px !important;
+    height: 442px !important;
+  }
+
+  .fixmobile24 {
+    font-size: 24px !important;
+  }
+  
+  .fixmobile11 {
+    font-size: 11px !important;
+    line-height: initial !important;
+    width: 327px !important;
+  }
+
+  .none {
+    display: none !important;
+  }
+}

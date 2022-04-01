@@ -1,0 +1,10 @@
+// MAIN NAVIGATION (FROM MAIN FRAME)
+#navigation{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  .global-wrapper{
+    align-items: center;
+    justify-content: space-between
+  }
+}
