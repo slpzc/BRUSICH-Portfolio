@@ -75,7 +75,6 @@ export default {
   data () {
     return {
       exec: 255,
-      PATHS: ['roofs', 'walls'],
       designerButtons: [
         {
           img: require(`~/assets/img/Category/house-details/day/roofs/1.png`),
@@ -161,10 +160,7 @@ export default {
     },
   methods: {
     changeDay () {
-      const from = this.mode
-      const to = this.mode === 'day' ? 'day' : 'night'
       if (this.mode === 'day') {
-        console.log('wtf')
         for (let i = 0; i < this.designerButtons.length; i++){
           const element = this.designerButtons[i]
           element.img = element.img.replace('day', 'night')

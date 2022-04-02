@@ -76,7 +76,7 @@
       <section class="reviews__section">
         <div class="global-wrapper">
         <b class="block-title">Отзывы и обзоры</b>
-          <reviews-slider></reviews-slider>
+          <reviews-slider :reviews="reviews"></reviews-slider>
           <customized-button  :color="'#333333'" :background="'#F8F8F8'" :padding="'15px 0'" >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.66 2.66634C14.66 1.93301 14.0667 1.33301 13.3334 1.33301H2.66671C1.93337 1.33301 1.33337 1.93301 1.33337 2.66634V10.6663C1.33337 11.3997 1.93337 11.9997 2.66671 11.9997H12L14.6667 14.6663L14.66 2.66634ZM11.3334 9.33301H4.66671C4.30004 9.33301 4.00004 9.03301 4.00004 8.66634C4.00004 8.29967 4.30004 7.99967 4.66671 7.99967H11.3334C11.7 7.99967 12 8.29967 12 8.66634C12 9.03301 11.7 9.33301 11.3334 9.33301ZM11.3334 7.33301H4.66671C4.30004 7.33301 4.00004 7.03301 4.00004 6.66634C4.00004 6.29967 4.30004 5.99967 4.66671 5.99967H11.3334C11.7 5.99967 12 6.29967 12 6.66634C12 7.03301 11.7 7.33301 11.3334 7.33301ZM11.3334 5.33301H4.66671C4.30004 5.33301 4.00004 5.03301 4.00004 4.66634C4.00004 4.29967 4.30004 3.99967 4.66671 3.99967H11.3334C11.7 3.99967 12 4.29967 12 4.66634C12 5.03301 11.7 5.33301 11.3334 5.33301Z" fill="#2CC37C"/>
@@ -161,13 +161,26 @@ export default {
         }
       ],
       selectedHouseType: null,
-      popularHouses: []
+      popularHouses: [],
+      reviews: null,
     }
   },
   async fetch() {
     console.log(this.$options.houseTypes[0].type)
     this.selectHouseType(this.$options.houseTypes[0], true);
     await this.fetchPopular();
+
+      const data = await housesConfig.reviews.createRequest({
+        asynchronous: true,
+        fields: requestData.reviews.fields,
+        populate: requestData.reviews.populate,
+      });
+
+      for (const el of data) {
+        el.img = this.getImages([el.img.data], 'large');
+      }
+      console.log('oda')
+      this.reviews = data;
   },
   methods: {
     onClick (e) {

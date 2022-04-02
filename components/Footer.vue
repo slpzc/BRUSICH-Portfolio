@@ -21,9 +21,9 @@
        </ul>
        <ul>
          <b>О КОМПАНИИ</b>
-         <li>Мы построили</li>
-         <li>Оплата и доставка</li>
-         <li>Вопросы и ответы</li>
+         <li @click="$router.push('/ourWorks')">Мы построили</li>
+         <li @click="$router.push('/stocks')">Оплата и доставка</li>
+         <li @click="$router.push('/faq')">Вопросы и ответы</li>
          <li @click="$router.push('/reviews')">Отзывы</li>
          <li>Вакансии</li>
        </ul>
@@ -82,6 +82,7 @@ export default {
           color: #363940;
         }
         li{
+          cursor: pointer;
           font-weight: 400;
           font-size: 12px;
           line-height: 22px;
