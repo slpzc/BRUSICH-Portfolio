@@ -1,12 +1,16 @@
 <template>
 <div id="empty_template">
   <transition mode="out-in" name="slide-fade">
-    <technical-settings v-if="selected" @close="closeModal()" :selected="selected" />
+    <client-only>
+      <technical-settings v-if="selected" @close="closeModal()" :selected="selected" />
+    </client-only>
   </transition>
   <div class="global-wrapper">
     <div class="block-title">Технологии строительства</div>
     <div class="settings-container">
-      <technologies/>
+      <client-only>
+        <technologies/>
+      </client-only>
     </div>
   </div>
 </div>

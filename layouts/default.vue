@@ -1,14 +1,16 @@
 <template>
-  <div :style="{ overflow: $route.name != 'index' || $route.name != 'other-categories' ? 'hidden' : '' }">
-    <NavigationComponent></NavigationComponent>
-    <div v-if="$route.name != 'index' && $route.name != 'other-categories'" class="global-wrapper">
-      <b class="block-title">Другие категории</b>
-      <otherCategoriesSlider>
-      </otherCategoriesSlider>
+  <client-only>
+    <div :style="{ overflow: $route.name != 'index' || $route.name != 'other-categories' ? 'hidden' : '' }">
+      <NavigationComponent></NavigationComponent>
+      <div v-if="$route.name != 'index' && $route.name != 'other-categories'" class="global-wrapper">
+        <b class="block-title">Другие категории</b>
+        <otherCategoriesSlider>
+        </otherCategoriesSlider>
+      </div>
+      <nuxt></nuxt>
+      <FooterComponent></FooterComponent>
     </div>
-    <nuxt></nuxt>
-    <FooterComponent></FooterComponent>
-  </div>
+  </client-only>
 </template>
 <script>
 const NavigationComponent = () => import('~/components/Navigation.vue')
